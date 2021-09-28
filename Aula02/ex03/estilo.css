@@ -1,0 +1,74 @@
+body {
+    font-family: "Roboto Mono", monospace;
+    background-color: #000000;
+    color: white;
+}
+
+.container {
+    text-align: center;
+}
+  
+.page-title {
+    color: #ffffff;
+    margin: 0 0 5px;
+}
+  
+.page-subtitle {
+    color: #ffffff;
+    margin-top: 5px;
+}
+  
+.page-logo {
+    width: 200px;
+}
+  
+.alura-logo {
+    width: 40px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+  
+input {
+    margin: 12px;
+    padding: 6px;
+    border-radius: 5px;
+}
+  
+label {
+    color: white;
+}
+  
+input#botao {
+    margin-top: 12px;
+    padding: 4px 8px;
+    border-radius: 10px;
+    background: #ffffff;
+}
+  
+h2{ 
+    margin-left: 35%;
+    overflow: hidden;
+    white-space: nowrap;
+    letter-spacing: .10em;
+    animation: 
+        efect 3s steps(60, end), /* tempo para animação */
+        blink-animation .5s /* velocidade da piscada */
+        step-end infinite;
+    color: rgb(250, 216, 58);
+    border-right: .10em solid black; /* piscada off */
+    animation-iteration-count: infinite;
+}
+
+
+
+@keyframes efect{
+    from{width: 0%;}
+    to{width: 37%;}
+}
+
+@keyframes blink-animation {
+    from, to {border-color: transparent;}
+    50% {border-color: rgb(0, 0, 0);} /* piscada on */
+}
+
